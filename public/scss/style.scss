@@ -1,0 +1,29 @@
+.border-pad {
+    border-right:1px solid #EEccEE;
+    padding: 0px !important;
+}
+.border-pad {
+    ul.noteslist {
+        list-style: none;
+        margin:0px auto;
+        padding:0;
+    }
+    
+    ul.noteslist li {
+        border-bottom: 1px solid #EECCEE;
+        cursor: pointer;
+    }
+    ul.noteslist li .note-div {
+        margin: 0 20px;
+    }
+}
+
+.f-right {
+    float: right
+}
+.f-14 {
+    font-size: 14px;
+}
+.lengthcolor {
+    color: #acacac; 
+}
