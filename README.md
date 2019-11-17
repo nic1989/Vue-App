@@ -11,7 +11,7 @@ Vue app with following structure
 - **pages and component structure**
 
 To Install node packages
-- npm install
+``` npm install ```
 
 To Run Application
-- npm run serve
+``` npm run serve ```

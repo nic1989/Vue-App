@@ -22,7 +22,7 @@
           :maxlength="maxchar"
           required
         ></b-form-textarea>
-        <span class="f-right lengthcolor f-14">Maximum <span v-html="(maxchar - form.desc.length)"></span> character</span>
+        <span class="f-right lengthcolor f-14"><span v-html="(maxchar - form.desc.length)"></span> character remaining</span>
     </b-form-group>
     <br>
     <b-button type="submit" variant="primary" class="mr-2 f-right" :disabled="disablebtn">

@@ -6,7 +6,7 @@
           {{note.title}}
           <span class="f-right" @click.stop="deleteNote(note.id)"><i class="fa fa-remove"></i></span>
         </h6>
-        <p>{{note.description}}</p>
+        <p v-b-tooltip.hover title="Click to edit or view full text">{{note.description | strshortlen}}</p>
       </div>
     </li>
   </ul>

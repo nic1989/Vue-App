@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import ApiService from './services/api.service'
 import TokenService from './services/storage.service'
+import filters from './filters'
 import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -19,6 +20,9 @@ ApiService.init(process.env.VUE_APP_ROOT_API)
 if (TokenService.getToken()) {
   ApiService.setHeader()
 }
+
+//Global filters
+Vue.use(filters);
 
 Vue.use(BootstrapVue)
 Vue.use(VueSweetalert2);

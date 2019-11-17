@@ -46,8 +46,6 @@ const router = new Router({
   ]
 })
 
-//router.replace({ path: '/', redirect: '/login' })
-
 router.beforeEach((to, from, next) => {
   const isPublic = to.matched.some(record => record.meta.public)
   const onlyWhenLoggedOut = to.matched.some(record => record.meta.onlyWhenLoggedOut)
